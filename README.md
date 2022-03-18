@@ -68,30 +68,10 @@ Lets take a closer look at the analysis and our findings:-
   * _**Low Risk:**_ 0.94
 
 
-
-### Compiling, Training, and Evaluating the Model
-
-
-**1) How many neurons, layers, and activation functions did you select for your neural network model, and why?**
-* For the first attempt, two layers were used (_First layer-_ 80 Neurons, Second layer- 30 Neurons. 
-
-  For the code to be more accurate, three layers were added and the neuron count increased.
-  
-  Even after adding more layers the accuracy did not increase (the accuracy stayed around 72%)
-  
-* For the third attempt, third layer was removed and the neuron count was increased (_First layer-_ 200 Neurons, _Second layer-_ 80 Neuron).
-
-**2) Were you able to achieve the target model performance?**
-* No
-
-**3) What steps did you take to try and increase model performance?**
-* New layers were added but did not help
-* Neuron count was increased. Helped a bit, still was not able increse the accuracy over 75%
-
 ## Summary
+The Easy Ensemble AdaBoost Classifier algorithm has the highest accuracy score of 93%. The precision values in general across all the algorithm are low and the recall values are high, as such these algorithms including the Easy Ensemble AdaBoost Classifier algorithm are not good enough to assess if a credit is high risk. This indicates that there is a lot of false positives and my recommendation would be to not use this models to predict credit risk.
 
-In 
 
 ## Links
-  * Visit this [link](https://github.com/tanzimamin2/Neural_Network_Charity_Analysis) for the excel dataset and other resources.
+  * Visit this [link](https://github.com/tanzimamin2/Credit_Risk_Analysis) for the excel dataset and other resources.
    
