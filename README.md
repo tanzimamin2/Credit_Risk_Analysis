@@ -8,19 +8,66 @@ The purpose of this analysis is to assess credit risk with machine learning mode
 ## Results
 Lets take a closer look at the analysis and our findings:-
 
-### Data Preprocessing
+**1) Oversampling: Naive Random Oversampling**
+* **_Accuracy Score_**: 66%
+* **_Precision_**
+  * _**High Risk**_: 0.01
+  * _**Low Risk:**_ 1.00
+* **_Recall_**
+  * _**High Risk**_: 0.72
+  * _**Low Risk:**_ 0.60 
 
-**1) What variable(s) are considered the target(s) for your model?**
-* **_Target Variable_**:- ```IS_SUCCESSFUL```
 
-**2) What variable(s) are considered to be the features for your model?**
-* The model's _**features**_ are the variables that allow a prediction or independent variables, defined by:
-  * ```APPLICATION_TYPE```, ```AFFILIATION```, ```CLASSIFICATION```, ```USE_CASE```, ```ORGANIZATION```, ```STATUS```, ```INCOME_AMT```, ```SPECIAL_CONSIDERATIONS```and ```ASK_AMT```
+**2) Oversampling: SMOTE Oversampling**
+* **_Accuracy Score_**: 66%
+* **_Precision_**
+  * _**High Risk**_: 0.01
+  * _**Low Risk:**_ 1.00
+* **_Recall_**
+  * _**High Risk**_: 0.61
+  * _**Low Risk:**_ 0.70
 
-**3) What variable(s) are neither targets nor features, and should be removed from the input data?**
-* These variables should be _**removed**_:-
-  * ```EIN```
-  * ```NAME```
+
+**3) Undersampling: Cluster Centroids**
+* **_Accuracy Score_**: 66%
+* **_Precision_**
+  * _**High Risk**_: 0.01
+  * _**Low Risk:**_ 1.00
+* **_Recall_**
+  * _**High Risk**_: 0.69
+  * _**Low Risk:**_ 0.40
+
+
+**4) Combination of Over and Under Sampling**
+* **_Accuracy Score_**: 54%
+* **_Precision_**
+  * _**High Risk**_: 0.01
+  * _**Low Risk:**_ 1.00
+* **_Recall_**
+  * _**High Risk**_: 0.78
+  * _**Low Risk:**_ 0.57
+
+
+**5) Balanced Random Forest Classifier**
+* **_Accuracy Score_**: 79%
+* **_Precision_**
+  * _**High Risk**_: 0.03
+  * _**Low Risk:**_ 1.00
+* **_Recall_**
+  * _**High Risk**_: 0.70
+  * _**Low Risk:**_ 0.87
+
+
+**6) Easy Ensemble AdaBoost Classifier**
+* **_Accuracy Score_**: 93%
+* **_Precision_**
+  * _**High Risk**_: 0.09
+  * _**Low Risk:**_ 1.00
+* **_Recall_**
+  * _**High Risk**_: 0.92
+  * _**Low Risk:**_ 0.94
+
+
 
 ### Compiling, Training, and Evaluating the Model
 
